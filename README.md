@@ -1,5 +1,5 @@
 # Custom Cursor Using CSS
-"Elevate Your Windows Experience with Exclusive Custom Cursor Designs!"  
+"Personalize Your Windows Experience with Custom Cursor Designs"  
 
 https://github.com/user-attachments/assets/61e97088-99fe-4a38-86d5-c8a719228f08
 
