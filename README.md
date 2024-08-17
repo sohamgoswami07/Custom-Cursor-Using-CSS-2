@@ -1,5 +1,5 @@
 # Custom Cursor Using CSS
-"Personalize Your Windows Experience with Custom Cursor Designs"  
+"Create and customize unique cursor designs exclusively for Windows using HTML, CSS, and JavaScript. Enhance your web projects with personalized cursor styles that add a creative touch to your Windows interface, making every click feel unique."  
 
 https://github.com/user-attachments/assets/61e97088-99fe-4a38-86d5-c8a719228f08
 
@@ -7,7 +7,7 @@ https://github.com/user-attachments/assets/61e97088-99fe-4a38-86d5-c8a719228f08
 HTML, CSS and JavaScript
 
 # Live at
-https://sohamgoswami07.github.io/Responsive-Image-Slider-1/
+https://sohamgoswami07.github.io/Custom-Cursor-Using-CSS-2/
 
 # Creator
 Created and developed by Soham Goswami..
