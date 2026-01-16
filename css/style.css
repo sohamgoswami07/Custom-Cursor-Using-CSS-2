@@ -18,11 +18,33 @@ body {
   font-style: normal;
 }
 
-.container {
-  height: 100vh;
-  width: 100%;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+/* FULL SCREEN LIGHT EFFECT */
+.cursor-overlay {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at var(--x) var(--y),
+    transparent 10%,
+    rgba(0, 0, 0, 0.85) 50%
+  );
+  z-index: 99;
+  will-change: transform, background-position;
+}
+
+/* LOTTIE CURSOR */
+.cursor-lottie {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  pointer-events: none;
+  transform: translate(-50%, -60%);
+  z-index: 999;
+  will-change: transform, background-position;
 }
 
 .section {
@@ -34,16 +56,27 @@ body {
   color: #ffffff;
 }
 
-h1 {
-    font-size: 3rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.content {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-a {
-  text-decoration: none;
+h1 {
+  font-size: clamp(1.5rem, 2.5rem, 3rem);
+  width: clamp(30%, 60%, 90%);
+  margin: 20px auto;
+}
+
+p {
+  width: clamp(30%, 60%, 90%);
+}
+
+.footer {
   position: absolute;
   left: 50%;
   bottom: 10%;
@@ -53,15 +86,19 @@ a {
 /* Second Section CSS */
 
 .section a {
+  text-decoration: none;
   color: #ffffff;
 }
 
-.cursor_light {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  pointer-events: none;
-  background: radial-gradient(circle at var(--x) var(--y), transparent 10%, rgba(0, 0, 0, 0.95) 20%);
+@media (hover: none) and (pointer: coarse) {
+  .cursor-overlay {
+    display: none;
+  }
+
+  .cursor-lottie {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+  }
 }
